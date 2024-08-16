@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body id="dautrang">
+    <nav class="container-fluid">
+        <div class="container nav1">
+          <div class="row">
+          <div class="col-12 col-md-7 col-xl-4 tonkho">
+          Bạn đang xem giá tồn kho tại:
+          <select style=" color: #c6992f; background: none; font-size: 12px; margin-right: 15px; ">
+              <option style="background-color: #c69a39; color: #fff">Hà Nội</option>
+              <option selected style="background-color: #c69a39; color: #fff">Hồ Chí Minh</option>
+              <option style="background-color: #c69a39; color: #fff">Đà Nẵng</option>
+          </select>
+        </div>
+        <div class="col-5" id="hotline"style="text-align: center;">
+          Hotline <span style="color: #f1aa0c;"> HN: 0969.120.120 - SG: 0965.123.123 - ĐN: 096.123.9797  CSKH Online 037.437.9999 - 096.539.7966</span>
+        </div>
+        <div class="col-12 col-md-5 col-xl-3 login">
+          <a href="" data-bs-toggle="modal" data-bs-target="#login" >Đăng Nhập</a> | 
+          <a href="" data-bs-toggle="modal" data-bs-target="#dangky">Đăng ký</a>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <nav class="container-fluid bg-nav2" style="position: relative;">
+        <div class="container p-2">
+            <div class="row">
+              <div class="col-3 col-md-2 col-lg-1" >
+                <a href="index.html"><img src="img/logo-removebg-preview.png" alt="" height="100%" width="100%"></a>
+              </div>
+              <div class="col-6 col-md-8 col-xl-3" style="text-align: center;">
+                <input type="text" placeholder="Tìm kiếm sản phẩm ..." style=" font-size: 0.9rem; "> 
+              </div>
+              <div class="col-3 col-md-2 col-xl-8">
+                <ul id="menu1">
+                  <li><a href="" data-bs-toggle="modal" data-bs-target="#napthe">NẠP THẺ</a></li>
+                  <li><a href="">SỰ KIỆN</a></li>
+                  <li><a href="aothun.html" target="_self">ÁO THUN</a></li>
+                  <li><a href="#game">ACC GAME</a></li>
+                  <li><a href="#phukien">PHỤ KIỆN</a></li>
+                  <li><a href="#dienthoai">ĐIỆN THOẠI</a></li>
+                </ul>
+                <div id="menu2" style="float: right;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"><i class="fa fa-bars" style="font-size:36px"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav menu-con">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#dienthoai ">Điện Thoại</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#phukien">Phụ kiện</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#game">Acc Game</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aothun.html">Áo thun</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sự Kiện</a>
+                    </li>  
+                    <li class="nav-item">
+                      <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#napthe">Nạp thẻ</a>
+                    </li> 
+                  </ul>
+                </div>
+            </div>
+          </div>
+            </div>
+        </div>
+    </nav>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-8" style="position: relative; overflow: hidden;">
+            <img src="img/baner2.png" alt="" class="img-baner" id="baner">
+            <img src="img/banner-xiaomi-13-13-pro.jpg.webp" alt="" class="img-baner" id="baner">
+            <img src="img/baner3_1.png" alt="" class="img-baner" id="baner">
+            <a class="prev" >&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+          <div class="col-4 video">
+            <iframe src="https://www.youtube.com/embed/aLfbDNr2OWM?autoplay=1" frameborder="0" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" title="Mở hộp iPhone 14 Pro: Muộn nhưng làm kỹ" height="100%" width="100%"></iframe>
+        </div>
+      </div>
+    </header>
+    <section class="container-fluid ss1">
+      <div class="container">
+        <h3 style="font-size: 25px; color: #505050; text-align: center;" id="dienthoai">ĐIỆN THOẠI</h3>
+        <div style="height: 3px; background-color: #32c5d2; width: 15%; margin:0 auto;"></div>
+        <div class="row"> 
+          <div class="col-12 col-md-4 col-xl-3 p-3">
+            <div class="card p-2"  onmouseout="hideBaoHanh('item1')" onmouseover="showBaoHanh('item1')">
+              <div id="item1" class="baohanh">
+                  <h6 >Khuyến mãi</h6>
+                  <p style="font-size: 14px; text-align: left;"> 
+                    Tặng: <span style="color: red;">miễn phi BHV</span> với máy thứ 5.
+                    <br>
+                    Giảm đến <span style="color: red;">30%</span> khi mua phụ kiện.
+                    <br>
+                    Giảm đến <span style="color: red;">200K</span> (Cho BHV) tại đây:
+                    <br>
+                    - Chat online: Chat Facebook
+                    <br>
+                    - Hà Nội: 097.120.6688
+                    <br>
+                    - Tp.HCM: 0965.123.123
+                    <br>
+                    - Đà Nẵng: 0965.123.9797
+                    </p>
+                    <button onclick="addToCart(0)" id="btnAdd">Thêm vào giỏ hàng</button>
+              </div>
+              <img class="card-img-top" src="img/dt2.webp" alt="Card image" style="width:100%" id="imgSP">
+              <div class="card-body">
+                <h4 class="card-title"><a href="" style="color: black;" id="tenSP">iPhone 11 cũ (Chính hãng, Rẻ hơn 35%)</a></h4>
+                <p class="card-text" style="color:red;" id="giaSP" >6650000</p>
+                <button class="btn-mua"> MUA</button>
+                <p style="font-size: 13px;">Tặng: <span style="color: red;">miễn phí BHV</span> với máy thứ 5.</p>
+                <p style="font-size: 13px;">(Quý khách <a href="">Đăng nhập</a> để kiểm tra đơn hàng)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3 p-3">
+            <div class="card p-2" onmouseout="hideBaoHanh('item2')" onmouseover="showBaoHanh('item2')">
+              <div id="item2" class="baohanh">
+                <h6 >Khuyến mãi</h6>
+                <p style="font-size: 14px; text-align: left;"> 
+                  Tặng: <span style="color: red;">miễn phi BHV</span> với máy thứ 5.
+                  <br>
+                  Giảm đến <span style="color: red;">30%</span> khi mua phụ kiện.
+                  <br>
+                  Giảm đến <span style="color: red;">200K</span> (Cho BHV) tại đây:
+                  <br>
+                  - Chat online: Chat Facebook
+                  <br>
+                  - Hà Nội: 097.120.6688
+                  <br>
+                  - Tp.HCM: 0965.123.123
+                  <br>
+                  - Đà Nẵng: 0965.123.9797
+                  </p>
+                  <button onclick="addToCart(1)" id="btnAdd">Thêm vào giỏ hàng</button>
+            </div>
+              <img class="card-img-top" src="img/dt1.webp" alt="Card image" style="width:100%" id="imgSP" >
+              <div class="card-body">
+                <h4 class="card-title"><a href="" style="color: black;" id="tenSP" >Xiaomi Redmi Note 12 (Giá ~ 4 triệu)</a></h4>
+                <p class="card-text" style="color:red;" id="giaSP">3650000</p>
+                <button class="btn-mua"> MUA</button>
+                <p style="font-size: 13px;">Tặng: <span style="color: red;">miễn phí BHV</span> với máy thứ 5.</p>
+                <p style="font-size: 13px;">(Quý khách <a href="">Đăng nhập</a> để kiểm tra đơn hàng)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3 p-3">
+            <div class="card p-2"  onmouseout="hideBaoHanh('item3')" onmouseover="showBaoHanh('item3')">
+              <div id="item3" class="baohanh">
+                <h6 >Khuyến mãi</h6>
+                <p style="font-size: 14px; text-align: left;"> 
+                  Tặng: <span style="color: red;">miễn phi BHV</span> với máy thứ 5.
+                  <br>
+                  Giảm đến <span style="color: red;">30%</span> khi mua phụ kiện.
+                  <br>
+                  Giảm đến <span style="color: red;">200K</span> (Cho BHV) tại đây:
+                  <br>
+                  - Chat online: Chat Facebook
+                  <br>
+                  - Hà Nội: 097.120.6688
+                  <br>
+                  - Tp.HCM: 0965.123.123
+                  <br>
+                  - Đà Nẵng: 0965.123.9797
+                  </p>
+                  <button onclick="addToCart(2)" id="btnAdd">Thêm vào giỏ hàng</button>
+            </div>
+              <img class="card-img-top" src="img/dt3.webp" alt="Card image" style="width:100%" id="imgSP">
+              <div class="card-body">
+                <h4 class="card-title"><a href="" style="color: black;" id="tenSP">Realme GT Neo 2 (Snapdragon 870)</a></h4>
+                <p class="card-text" style="color:red;" id="giaSP">5750000</p>
+                <button class="btn-mua"> MUA</button>
+                <p style="font-size: 13px;">Tặng: <span style="color: red;">miễn phí BHV</span> với máy thứ 5.</p>
+                <p style="font-size: 13px;">(Quý khách <a href="">Đăng nhập</a> để kiểm tra đơn hàng)</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-xl-3 p-3">
+            <div class="card p-2"  onmouseout="hideBaoHanh('item4')" onmouseover="showBaoHanh('item4')">
+              <div id="item4" class="baohanh">
+                <h6 >Khuyến mãi</h6>
+                <p style="font-size: 14px; text-align: left;"> 
+                  Tặng: <span style="color: red;">miễn phi BHV</span> với máy thứ 5.
+                  <br>
+                  Giảm đến <span style="color: red;">30%</span> khi mua phụ kiện.
+                  <br>
+                  Giảm đến <span style="color: red;">200K</span> (Cho BHV) tại đây:
+                  <br>
+                  - Chat online: Chat Facebook
+                  <br>
+                  - Hà Nội: 097.120.6688
+                  <br>
+                  - Tp.HCM: 0965.123.123
+                  <br>
+                  - Đà Nẵng: 0965.123.9797
+                  </p>
+                  <button onclick="addToCart(3)" id="btnAdd">Thêm vào giỏ hàng</button>
+            </div>
+              <img class="card-img-top" src="img/dt4.webp" alt="Card image" style="width:100%" id="imgSP">
+              <div class="card-body">
+                <h4 class="card-title"><a href="" style="color: black;" id="tenSP">Xiaomi Black Shark 2 (RAM 6GB, 8GB)</a></h4>
+                <p class="card-text" style="color:red;" id="giaSP">8050000</p>
+                <button class="btn-mua"> MUA</button>
+                <p style="font-size: 13px;">Tặng: <span style="color: red;">miễn phí BHV</span> với máy thứ 5.</p>
+                <p style="font-size: 13px;">(Quý khách <a href="">Đăng nhập</a> để kiểm tra đơn hàng)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid ss2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6" style="margin: 0px; padding-right: 0px;"><img src="img/phukien1.webp" alt="" width="100%"></div>
+          <div class="col-6" style="margin: 0px; padding-left: 0px;"><img src="img/phukien2.webp" alt="" width="100%"></div>
+        </div>
+        <h3 style="font-size: 25px; color: #505050; text-align: center; margin: 10px;" id="phukien">PHỤ KIỆN</h3>
+        <div style="height: 3px; background-color: #32c5d2; width: 15%; margin:10px auto;"></div>
+        <div class="row">
+          <div class="col-12 col-md-4 col-xl-2" style="padding: 0px;">
+            <div class="card" style="margin: 10px;">
+            <img class="card-img-top" src="img/phukien3.webp" alt="Card image">
+              <div class="card-body">
+                <h4 class="card-title"><a href="" style="color: black;">Xiaomi In-Ear Headphones Basic</a></h4>
+                <div class="row">
+                  <div class="col-6" style="text-align: center;"><p class="card-text" style="color:red;">100.000</p></div>
+                  <div class="col-6" style="text-align: center;"><button class="btn-mua">MUA</button></div>
+                </div>
+          </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-4 col-xl-2" style="padding: 0px;">
+          <div class="card" style="margin: 10px;">
+          <img class="card-img-top" src="img/pk4.webp" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title"><a href="" style="color: black;">Quạt tản nhiệt MEMO CX01</a></h4>
+              <div class="row">
+                <div class="col-6" style="text-align: center;"><p class="card-text" style="color:red;">240.000</p></div>
+                <div class="col-6" style="text-align: center;"><button class="btn-mua">MUA</button></div>
+              </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-xl-2" style="padding: 0px;">
+        <div class="card" style="margin: 10px;">
+        <img class="card-img-top" src="img/pk5.webp" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title"><a href="" style="color: black;">Quạt tản nhiệt MEMO CX02</a></h4>
+            <div class="row">
+              <div class="col-6" style="text-align: center;"><p class="card-text" style="color:red;">300.000</p></div>
+              <div class="col-6" style="text-align: center;"><button class="btn-mua">MUA</button></div>
+            </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 col-xl-2" style="padding: 0px;">
+      <div class="card" style="margin: 10px;">
+      <img class="card-img-top" src="img/pk6.webp" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title"><a href="" style="color: black;">Pisen Quick QP3 10000mAh</a></h4>
+          <div class="row">
+            <div class="col-6" style="text-align: center;"><p class="card-text" style="color:red;">400.000</p></div>
+            <div class="col-6" style="text-align: center;"><button class="btn-mua">MUA</button></div>
+          </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-4 col-xl-2" style="padding: 0px;">
+    <div class="card" style="margin: 10px;">
+    <img class="card-img-top" src="img/pk7.webp" alt="Card image">
+      <div class="card-body">
+        <h4 class="card-title"><a href="" style="color: black;">Quạt tản nhiệt MEMO DL05</a></h4>
+        <div class="row">
+          <div class="col-6" style="text-align: center;"><p class="card-text" style="color:red;">600.000</p></div>
+          <div class="col-6" style="text-align: center;"><button class="btn-mua">MUA</button></div>
+        </div>
+  </div>
+  </div>
+</div>
+
+<div class="col-12 col-md-4 col-xl-2" style="padding: 0px;">
+  <div class="card" style="margin: 10px;">
+  <img class="card-img-top" src="img/pk8.webp" alt="Card image">
+    <div class="card-body">
+      <h4 class="card-title"><a href="" style="color: black;">Ốp lưng Xiaomi Redmi K40</a></h4>
+      <div class="row">
+        <div class="col-6" style="text-align: center; "><p class="card-text" style="color:red; ">80.000</p></div>
+        <div class="col-6" style="text-align: center;"><button class="btn-mua">MUA</button></div>
+      </div>
+</div>
+</div>
+</div>
+      </div>
+    </section>
+
+    <section class="container-fluid ss3">
+      <div class="container">
+        <h3 style="font-size: 25px; color: #505050; text-align: center;" id="game">DANH MỤC GAME</h3>
+        <div style="height: 3px; background-color: #32c5d2; width: 15%; margin:0 auto;"></div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="margin: 10px;">
+              <img class="card-img-top" src="img/acc1.gif" alt="img">
+              <div class="card-body" style="text-align: center;">
+                <h4 class="card-title"><a href="" style="color: rgb(249,203,124);">LIÊN QUÂN MOBILE</a></h4>
+                <p style="color: rgb(146,135,147);">Đã bán: 121,486</p>
+                <h5>500.000đ</h5>
+                <button>MUA</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="margin: 10px;">
+              <img class="card-img-top" src="img/acc2.gif" alt="img">
+              <div class="card-body" style="text-align: center;">
+                <h4 class="card-title"><a href="" style="color: rgb(249,203,124);">VÒNG QUAY MAY MẮN</a></h4>
+                <p style="color: rgb(146,135,147);">Đã quay: 500</p>
+                <h5>30.000đ</h5>
+                <button>MUA</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="margin: 10px;">
+              <img class="card-img-top" src="img/acc3.gif" alt="img">
+              <div class="card-body" style="text-align: center;">
+                <h4 class="card-title"><a href="" style="color: rgb(249,203,124);">BINGO SÔI ĐỘNG</a></h4>
+                <h3></h3>
+                <p style="color: rgb(146,135,147);">Đã quay: 200</p>
+                <h5>50.000đ</h5>
+                <button>MUA</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="margin: 10px;">
+              <img class="card-img-top" src="img/acc2.gif" alt="img">
+              <div class="card-body" style="text-align: center;">
+                <h4 class="card-title"><a href="" style="color: rgb(249,203,124);">VÒNG QUAY MAY MẮN</a></h4>
+                <p style="color: rgb(146,135,147);">Đã quay: 500</p>
+                <h5>30.000đ</h5>
+                <button>MUA</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="margin: 10px;">
+              <img class="card-img-top" src="img/acc3.gif" alt="img">
+              <div class="card-body" style="text-align: center;">
+                <h4 class="card-title"><a href="" style="color: rgb(249,203,124);">BINGO SÔI ĐỘNG</a></h4>
+                <h3></h3>
+                <p style="color: rgb(146,135,147);">Đã quay: 200</p>
+                <h5>50.000đ</h5>
+                <button>MUA</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" style="margin: 10px;">
+              <img class="card-img-top" src="img/acc1.gif" alt="img">
+              <div class="card-body" style="text-align: center;">
+                <h4 class="card-title"><a href="" style="color: rgb(249,203,124);">LIÊN QUÂN MOBILE</a></h4>
+                <p style="color: rgb(146,135,147);">Đã bán: 121,486</p>
+                <h5>500.000đ</h5>
+                <button>MUA</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid" style="background-color: rgb(250, 250, 250);">
+      <div class="container p-4"> 
+        <div class="row">
+          <div class="col-4 cuahang">
+              <h3 style="font-size: 1.2rem; color: #c69a39; font-weight: bold;">HỆ THỐNG CỬA HÀNG</h3>
+              <p>
+                <span style="font-weight: bold;">HÀ NỘI</span> <br>
+                120 Thái Hà, Q. Đống Đa <br>
+                Điện thoại: 0969.120.120 (Bán hàng)
+                037.437.9999 (Kỹ thuật)
+              </p>  
+              <p>
+                <span style="font-weight: bold;">HỒ CHÍ MINH</span> <br>
+                123 Trần Quang Khải, Q.1 <br>
+                Điện thoại: 0965.123.123 - 0969.520.520
+              </p>
+
+              <p>
+                <span style="font-weight: bold;">ĐÀ NẴNG</span> <br>
+                97 Hàm Nghi, Q.Thanh Khê<br>
+                Điện thoại: 096.123.9797 - 097.123.9797
+              </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h3 style="font-size: 1.2rem; color: #c69a39; font-weight: bold;">CHÍNH SÁCH</h3>
+            <p>
+              <span style="font-weight: bold;">CHÚNG TÔI Ở ĐÂY</span> <br>
+              Chúng tôi luôn lấy uy tín đặt trên hàng đầu đối với khách hàng, hy vọng chúng tôi sẽ được phục vụ các bạn. Cám ơn! <br>
+              <span style="font-weight: bold;">Thời gian hỗ trợ:</span> <br>
+               Sáng: 8h00 -> 11h30 | Chiều: 13h00 -> 22h00
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h3 style="font-size: 1.2rem; color: #c69a39; font-weight: bold; text-align: center;">ĐĂNG KÝ NHẬN THÔNG TIN</h3>
+            <div class="row">
+              <input type="text" placeholder="Nhập email/số điện thoại" style="width:60%; height: 30px; font-size: 0.7rem; margin: 5px auto;">
+              <button style="width: 60%; margin: 5px auto; padding: 5px; background-color: rgb(198,154,57); color: white;">Gửi</button>
+            </div>
+            <h3 style="font-size: 1.2rem; color: #c69a39; font-weight: bold; text-align: center; margin: 15px;">LIÊN KẾT</h3>
+              <div class="row" style="margin:5px;">
+                <div class="col-2"></div>
+                <div class="col-2"><a href=""><img src="img/youtube-logo.png" alt="" width="100%" height="100%"></a></div>
+                <div class="col-2"><a href="" style="color: black;">Youtube</a></div>
+              </div>
+              <div class="row" style="margin:5px;">
+                <div class="col-2"></div>
+                <div class="col-2"><a href=""><img src="img/facebook-logo.png" alt="" width="100%" height="100%"></a></div>
+                <div class="col-2"><a href="" style="color: black;">Facebook</a></div>
+              </div>
+              <div class="row" style="margin:5px;">
+                <div class="col-2"></div>
+                <div class="col-2"><a href=""><img src="img/tiktok-logo.png" alt="" width="100%" height="100%"></a></div>
+                <div class="col-2"><a href="" style="color: black;">Tiktok</a></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <div class="modal" id="login" style="margin: 120px auto;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" style="color: red; text-align: center; width: 100%;" >ĐĂNG NHẬP</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <input type="text" placeholder="Tên đăng nhâp/Email/Số điện thoại" name="userName" id="tendangnhapDN">
+            <input type="text" placeholder="Mật khẩu" name="password" id="matkhauDN">
+            <button style="background-color: rgb(249,150,74); color: white;" onclick="valformDN()" >ĐĂNG NHẬP</button>
+            <div style="color: red;" id="loiDN"></div>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            Chưa có tài khoản <a href="" data-bs-toggle="modal" data-bs-target="#dangky">( Đăng ký ngay )</a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="dangky" style="margin: 120px auto;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" style="color: red; text-align: center; width: 100%;" >ĐĂNG KÝ</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <input type="text" placeholder="Họ và tên" id="ten">
+            <input type="text" placeholder="Email/số điện thoại" id="sdt">
+            <input type="text" placeholder="Tên đăng nhâp" id="tendangnhapDK">
+            <input type="text" placeholder="Mật khẩu" id="matkhauDK">
+            <div style="color: red;" id="loi"></div>
+            <button style="background-color: rgb(249,150,74); color: white;" id="btnDangKy" onclick="valformDK()">Đăng ký</button>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            Đã có tài khoản <a href="" data-bs-toggle="modal" data-bs-target="#login">( Đăng nhập ngay )</a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="napthe" style="margin: 120px auto;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" style="color: red; text-align: center; width: 100%;" >NẠP THẺ</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p style="color: red;">Vui lòng chọn đúng mệnh giá chọn sai mất thẻ</p>
+            <div class="row" style="margin: 10px 0px;">
+              <div class="col-4" style="text-align: right;">Tài khoản:</div>
+              <div class="col-8"> <input type="text" style="width: 100%;"></div>
+            </div>
+            <div class="row" style="margin: 10px 0px;">
+              <div class="col-4" style="text-align: right;">Loại thẻ:</div>
+              <div class="col-8"> 
+                <select >
+                  <option > VIETTEL</option>
+                  <option > MOBIFONE</option>
+                  <option > VINAPHONE</option>
+              </select> 
+            </div>
+            </div>
+
+            <div class="row" style="margin: 10px 0px;">
+              <div class="col-4" style="text-align: right;">Mệnh giá:</div>
+              <div class="col-8"> 
+                <select style="width: 100%;">
+                  <option > --10.000đ</option>
+                  <option > --20.000đ</option>
+                  <option > --50.000đ</option>
+                  <option > --100.000đ</option>
+                  <option > --200.000đ</option>
+                  <option > --500.000đ</option>
+              </select> 
+            </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin: 10px 0px;">
+            <div class="col-4" style="text-align: right;">Mã số thẻ:</div>
+            <div class="col-8"> <input type="text" style="width: 100%;"></div>
+          </div>
+
+          <div class="row" style="margin: 10px 0px;">
+            <div class="col-4" style="text-align: right;">Số serial:</div>
+            <div class="col-8"> <input type="text" style="width: 100%;"></div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button style="background-color: rgb(50,197,210); color: white;">NẠP THẺ</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="clock">
+      <span><span class="hours">0 </span>Hours</span>
+      <span><span class="minutes">0</span>Minutes</span>
+      <span><span class="seconds">0</span>Seconds</span>
+  </div>
+  <div class="modal" id="flashSale" style="margin: 100px auto;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body" style="text-align: center; padding: 0px;">
+          <img src="/img/flashsale.png" alt="" width="100%" height="100%">
+        </div>
+  
+      </div>
+    </div>
+  </div>
+    <a href="#dautrang" class="dau-trang"><i class="fa fa-sort-asc" style="font-size: 40px;"></i></a>
+    <a href="giohang.html" target="_self" class="gio-hang"><i class="fa fa-cart-plus" style="font-size: 40px;"></i></a>\
+    <script src="/js/script.js"></script>
+    <script src="/js/giohang.js"></script>
+</body>
+</html>

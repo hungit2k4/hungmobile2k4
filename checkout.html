@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<style>
+  
+  
+</style>
+<body>
+    <nav class="container-fluid">
+        <div class="container nav1">
+          <div class="row">
+          <div class="col-12 col-md-7 col-xl-4 tonkho">
+          Bạn đang xem giá tồn kho tại:
+          <select style=" color: #c6992f; background: none; font-size: 12px; margin-right: 15px; ">
+              <option style="background-color: #c69a39; color: #fff">Hà Nội</option>
+              <option selected style="background-color: #c69a39; color: #fff">Hồ Chí Minh</option>
+              <option style="background-color: #c69a39; color: #fff">Đà Nẵng</option>
+          </select>
+        </div>
+        <div class="col-5" id="hotline"style="text-align: center;">
+          Hotline <span style="color: #f1aa0c;"> HN: 0969.120.120 - SG: 0965.123.123 - ĐN: 096.123.9797  CSKH Online 037.437.9999 - 096.539.7966</span>
+        </div>
+        <div class="col-12 col-md-5 col-xl-3 login">
+          <a href="" data-bs-toggle="modal" data-bs-target="#login" >Đăng Nhập</a> | 
+          <a href="" data-bs-toggle="modal" data-bs-target="#dangky">Đăng ký</a>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <nav class="container-fluid bg-nav2" style="position: relative;">
+        <div class="container p-2">
+            <div class="row">
+              <div class="col-3 col-md-2 col-lg-1" >
+                <a href="index.html"><img src="img/logo-removebg-preview.png" alt="" height="100%" width="100%"></a>
+              </div>
+              <div class="col-6 col-md-8 col-xl-3" style="text-align: center;">
+                <input type="text" placeholder="Tìm kiếm sản phẩm ..." style=" font-size: 0.9rem; "> 
+              </div>
+              <div class="col-3 col-md-2 col-xl-8">
+                <ul id="menu1">
+                  <li><a href="" data-bs-toggle="modal" data-bs-target="#napthe">NẠP THẺ</a></li>
+                  <li><a href="">SỰ KIỆN</a></li>
+                  <li><a href="aothun.html" target="_top">ÁO THUN</a></li>
+                  <li><a href="#game">ACC GAME</a></li>
+                  <li><a href="#phukien">PHỤ KIỆN</a></li>
+                  <li><a href="#dienthoai">ĐIỆN THOẠI</a></li>
+                </ul>
+                <div id="menu2" style="float: right;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"><i class="fa fa-bars" style="font-size:36px"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav menu-con">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Điện Thoại</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Phụ kiện</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Acc Game</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="aothun.html" target="_self">Áo thun</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sự Kiện</a>
+                    </li>  
+                    <li class="nav-item">
+                      <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#napthe">Nạp thẻ</a>
+                    </li> 
+                  </ul>
+                </div>
+            </div>
+          </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container" style="color: rgb(130, 130, 130); text-align: center;">
+         <i class="fa fa-credit-card" style="font-size:50px;"></i>
+        <h2 style="text-align: center;">Thanh Toán</h2>
+        <p>Vui lòng kiểm tra thông tin trước khi đặt hàng</p>
+        <div class="thanhtoan" >
+        <div class="row" style="color: rgb(29, 29, 29); text-align: left;">
+        <h5>Thông tin khách hàng</h5>
+        </div>
+        <div class="row" style="color: rgb(29, 29, 29); text-align: left; ">
+          <form action="" id="thongtin">
+            Họ tên <br>
+            <input type="text" placeholder="Nguyễn Văn A" disabled > <br>
+            Giới tính <br>
+            <input type="text" placeholder="Nam" disabled> <br>
+            Địa chỉ <br>
+            <input type="text" placeholder="L1/11 Tô Ký, Trung Mỹ Tây, Q12, HCM" disabled> <br>
+            Điện thoại <br>
+            <input type="text" placeholder="0332040055" disabled> <br>
+            Email <br>
+            <input type="text" placeholder="funny@gmail.com" disabled> <br>
+          </form>
+          </div>
+          <div class="row" style="color: rgb(29, 29, 29); text-align: left;">
+            <h5>Hình thức thanh toán</h5>
+            </div>
+
+            <div class="row" style="color: rgb(29, 29, 29); text-align: left;">
+              <form action="">
+                <input type="radio" name="" id=""> Tiền mặt <br>
+                <input type="radio" name="" id=""> Chuyển khoản <br>
+                <input type="radio" name="" id=""> Ship COD <br>
+              </form>
+              </div>
+              <hr>
+              <a href="" data-bs-toggle="modal" data-bs-target="#thanh-cong"><button style="background-color: rgb(0,122,254); color: white;">Đặt hàng</button></a>
+        </div>
+    </section>
+
+
+    <footer class="container-fluid" style="background-color: rgb(250, 250, 250);">
+      <div class="container p-4"> 
+        <div class="row">
+          <div class="col-4 cuahang">
+              <h3 style="font-size: 1.2rem; color: #c69a39; font-weight: bold;">HỆ THỐNG CỬA HÀNG</h3>
+              <p>
+                <span style="font-weight: bold;">HÀ NỘI</span> <br>
+                120 Thái Hà, Q. Đống Đa <br>
+                Điện thoại: 0969.120.120 (Bán hàng)
+                037.437.9999 (Kỹ thuật)
+              </p>  
+              <p>
+                <span style="font-weight: bold;">HỒ CHÍ MINH</span> <br>
+                123 Trần Quang Khải, Q.1 <br>
+                Điện thoại: 0965.123.123 - 0969.520.520
+              </p>
+
+              <p>
+                <span style="font-weight: bold;">ĐÀ NẴNG</span> <br>
+                97 Hàm Nghi, Q.Thanh Khê<br>
+                Điện thoại: 096.123.9797 - 097.123.9797
+              </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h3 style="font-size: 1.2rem; color: #c69a39; font-weight: bold;">CHÍNH SÁCH</h3>
+            <p>
+              <span style="font-weight: bold;">CHÚNG TÔI Ở ĐÂY</span> <br>
+              Chúng tôi luôn lấy uy tín đặt trên hàng đầu đối với khách hàng, hy vọng chúng tôi sẽ được phục vụ các bạn. Cám ơn! <br>
+              <span style="font-weight: bold;">Thời gian hỗ trợ:</span> <br>
+               Sáng: 8h00 -> 11h30 | Chiều: 13h00 -> 22h00
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h3 style="font-size: 1.2rem; color: #c69a39; font-weight: bold; text-align: center;">ĐĂNG KÝ NHẬN THÔNG TIN</h3>
+            <div class="row">
+              <input type="text" placeholder="Nhập email/số điện thoại" style="width:60%; height: 30px; font-size: 0.7rem; margin: 5px auto;">
+              <button style="width: 60%; margin: 5px auto; padding: 5px; background-color: rgb(198,154,57); color: white;">Gửi</button>
+            </div>
+            <h3 style="font-size: 1.2rem; color: #c69a39; font-weight: bold; text-align: center; margin: 15px;">LIÊN KẾT</h3>
+              <div class="row" style="margin:5px;">
+                <div class="col-2"></div>
+                <div class="col-2"><a href=""><img src="img/youtube-logo.png" alt="" width="100%" height="100%"></a></div>
+                <div class="col-2"><a href="" style="color: black;">Youtube</a></div>
+              </div>
+              <div class="row" style="margin:5px;">
+                <div class="col-2"></div>
+                <div class="col-2"><a href=""><img src="img/facebook-logo.png" alt="" width="100%" height="100%"></a></div>
+                <div class="col-2"><a href="" style="color: black;">Facebook</a></div>
+              </div>
+              <div class="row" style="margin:5px;">
+                <div class="col-2"></div>
+                <div class="col-2"><a href=""><img src="img/tiktok-logo.png" alt="" width="100%" height="100%"></a></div>
+                <div class="col-2"><a href="" style="color: black;">Tiktok</a></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" id="thanh-cong" style="margin: 120px auto;">
+      <div class="modal-dialog">
+        <div class="modal-content" style="text-align: center;">
+          <i class="fa fa-check-circle-o" style="font-size:60px; color: #3ad43f;"></i>
+          Đặt hàng thành công
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+    
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal" id="login" style="margin: 120px auto;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" style="color: red; text-align: center; width: 100%;" >ĐĂNG NHẬP</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <input type="text" placeholder="Tên đăng nhâp/Email/Số điện thoại">
+            <input type="text" placeholder="Mật khẩu">
+            <button style="background-color: rgb(249,150,74); color: white;" >ĐĂNG NHẬP</button>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            Chưa có tài khoản <a href="" data-bs-toggle="modal" data-bs-target="#dangky">( Đăng ký ngay )</a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="dangky" style="margin: 120px auto;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" style="color: red; text-align: center; width: 100%;" >ĐĂNG KÝ</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <input type="text" placeholder="Họ và tên">
+            <input type="text" placeholder="Email/số điện thoại">
+            <input type="text" placeholder="Tên đăng nhâp">
+            <input type="text" placeholder="Mật khẩu">
+            <button style="background-color: rgb(249,150,74); color: white;" >Đăng ký</button>
+          </div>
+    
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            Đã có tài khoản <a href="" data-bs-toggle="modal" data-bs-target="#login">( Đăng nhập ngay )</a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="napthe" style="margin: 120px auto;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+    
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" style="color: red; text-align: center; width: 100%;" >NẠP THẺ</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+    
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p style="color: red; text-align: center;">Vui lòng chọn đúng mệnh giá chọn sai mất thẻ</p>
+            <div class="row" style="margin: 10px 0px;">
+              <div class="col-4" style="text-align: right;">Tài khoản:</div>
+              <div class="col-8"> <input type="text" style="width: 100%;"></div>
+            </div>
+            <div class="row" style="margin: 10px 0px;">
+              <div class="col-4" style="text-align: right;">Loại thẻ:</div>
+              <div class="col-8"> 
+                <select >
+                  <option > VIETTEL</option>
+                  <option > MOBIFONE</option>
+                  <option > VINAPHONE</option>
+              </select> 
+            </div>
+            </div>
+
+            <div class="row" style="margin: 10px 0px;">
+              <div class="col-4" style="text-align: right;">Mệnh giá:</div>
+              <div class="col-8"> 
+                <select style="width: 100%;">
+                  <option > --10.000đ</option>
+                  <option > --20.000đ</option>
+                  <option > --50.000đ</option>
+                  <option > --100.000đ</option>
+                  <option > --200.000đ</option>
+                  <option > --500.000đ</option>
+              </select> 
+            </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin: 10px 0px;">
+            <div class="col-4" style="text-align: right;">Mã số thẻ:</div>
+            <div class="col-8"> <input type="text" style="width: 100%;"></div>
+          </div>
+
+          <div class="row" style="margin: 10px 0px;">
+            <div class="col-4" style="text-align: right;">Số serial:</div>
+            <div class="col-8"> <input type="text" style="width: 100%;"></div>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button style="background-color: rgb(50,197,210); color: white;">NẠP THẺ</button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <a href="giohang.html" target="_self" class="gio-hang"><i class="fa fa-cart-plus" style="font-size: 40px;"></i></a>
+</body>
+</html>
